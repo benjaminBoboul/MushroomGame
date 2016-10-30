@@ -1,3 +1,8 @@
+/*! \file projet_champignon.h
+	\brief Header du projet Champignon.
+	
+	Le fichier contient les déclarations des structures, fonctions et procédures.
+*/
 #ifndef __PROJET_CHAMPIGNON_H__
 #define __PROJET_CHAMPIGNON_H__
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Champignon 2016:  Fichier source de projet_champignon.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Champignon 2016
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">projet_champignon.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="projet__champignon_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef __PROJET_CHAMPIGNON_H__</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define __PROJET_CHAMPIGNON_H__</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/* structures ============================================================== */</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structcueilleur.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcueilleur.html">cueilleur</a> </div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> x, y, champignons, boost, dernierBoost;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structchampignon.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structchampignon.html">champignon</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">char</span> type;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> x, y, ramasse;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structsanglier.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structsanglier.html">sanglier</a></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> x, y, speed;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structcarte.html">   41</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcarte.html">carte</a></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">struct </span><a class="code" href="structcueilleur.html">cueilleur</a> joueur;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> compteur;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> champignons[];</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/* structures fonctions ==================================================== */</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">struct </span><a class="code" href="structcueilleur.html">cueilleur</a> init_cueilleur();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">struct </span><a class="code" href="structchampignon.html">champignon</a> init_champignon();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">struct </span><a class="code" href="structsanglier.html">sanglier</a> init_sanglier();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/* fonctions =============================================================== */</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="projet__champignon_8h.html#af5ddc36a2eba20fbf0e056ec1e31a2c1">aleatoire</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> limite);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* procédures ============================================================== */</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="projet__champignon_8h.html#aa27106b8602bc2deb96d6be27f15e450">afficherCueilleur</a>(<span class="keyword">struct</span> <a class="code" href="structcueilleur.html">cueilleur</a> c);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="projet__champignon_8h.html#afacad93084d4d8760ae89d2c82566685">afficherChampignon</a>(<span class="keyword">struct</span> <a class="code" href="structchampignon.html">champignon</a> c);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> <a class="code" href="projet__champignon_8h.html#a2dbe7a256efef4aa6e9f63fb696abcf8">afficherSanglier</a>(<span class="keyword">struct</span> <a class="code" href="structsanglier.html">sanglier</a> c);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="projet__champignon_8h_html_aa27106b8602bc2deb96d6be27f15e450"><div class="ttname"><a href="projet__champignon_8h.html#aa27106b8602bc2deb96d6be27f15e450">afficherCueilleur</a></div><div class="ttdeci">void afficherCueilleur(struct cueilleur c)</div><div class="ttdoc">Affiche l&amp;#39;ensemble des données du joueur. </div><div class="ttdef"><b>Definition:</b> projet_champignon.c:44</div></div>
+<div class="ttc" id="projet__champignon_8h_html_af5ddc36a2eba20fbf0e056ec1e31a2c1"><div class="ttname"><a href="projet__champignon_8h.html#af5ddc36a2eba20fbf0e056ec1e31a2c1">aleatoire</a></div><div class="ttdeci">unsigned int aleatoire(unsigned int limite)</div><div class="ttdoc">La fonction aleatoire retourne un entier généré de manière pseudo-aléatoire compris entre 0 et la val...</div><div class="ttdef"><b>Definition:</b> projet_champignon.c:7</div></div>
+<div class="ttc" id="structsanglier_html"><div class="ttname"><a href="structsanglier.html">sanglier</a></div><div class="ttdoc">Structure de données d&amp;#39;un sanglier. </div><div class="ttdef"><b>Definition:</b> projet_champignon.h:32</div></div>
+<div class="ttc" id="structchampignon_html"><div class="ttname"><a href="structchampignon.html">champignon</a></div><div class="ttdoc">Structure de données d&amp;#39;un champignon, le champignon à une position x, y sur la carte et un compteur p...</div><div class="ttdef"><b>Definition:</b> projet_champignon.h:23</div></div>
+<div class="ttc" id="projet__champignon_8h_html_afacad93084d4d8760ae89d2c82566685"><div class="ttname"><a href="projet__champignon_8h.html#afacad93084d4d8760ae89d2c82566685">afficherChampignon</a></div><div class="ttdeci">void afficherChampignon(struct champignon c)</div><div class="ttdoc">Affiche l&amp;#39;ensemble des données d&amp;#39;un champignon. </div><div class="ttdef"><b>Definition:</b> projet_champignon.c:53</div></div>
+<div class="ttc" id="structcarte_html"><div class="ttname"><a href="structcarte.html">carte</a></div><div class="ttdoc">Structure de données de la carte, contient un cueilleur, un compteur de nombre de tours...</div><div class="ttdef"><b>Definition:</b> projet_champignon.h:41</div></div>
+<div class="ttc" id="structcueilleur_html"><div class="ttname"><a href="structcueilleur.html">cueilleur</a></div><div class="ttdoc">Structure de donnés du cueilleur, dispose d&amp;#39;une position x, y, un compteur à champignons ainsi que d&amp;#39;...</div><div class="ttdef"><b>Definition:</b> projet_champignon.h:14</div></div>
+<div class="ttc" id="projet__champignon_8h_html_a2dbe7a256efef4aa6e9f63fb696abcf8"><div class="ttname"><a href="projet__champignon_8h.html#a2dbe7a256efef4aa6e9f63fb696abcf8">afficherSanglier</a></div><div class="ttdeci">void afficherSanglier(struct sanglier c)</div><div class="ttdoc">Affiche l&amp;#39;ensemble des données d&amp;#39;un sanglier. </div><div class="ttdef"><b>Definition:</b> projet_champignon.c:61</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

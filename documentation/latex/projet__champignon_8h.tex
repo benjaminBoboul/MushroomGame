@@ -1,0 +1,129 @@
+\hypertarget{projet__champignon_8h}{}\section{Référence du fichier projet\+\_\+champignon.\+h}
+\label{projet__champignon_8h}\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+
+
+Header du projet Champignon.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcueilleur}{cueilleur}
+\begin{DoxyCompactList}\small\item\em Structure de donnés du cueilleur, dispose d\textquotesingle{}une position x, y, un compteur à champignons ainsi que d\textquotesingle{}un état de boost. \end{DoxyCompactList}\item 
+struct \hyperlink{structchampignon}{champignon}
+\begin{DoxyCompactList}\small\item\em Structure de données d\textquotesingle{}un champignon, le champignon à une position x, y sur la carte et un compteur pour déterminer le tour auquel il as été ramassé. \end{DoxyCompactList}\item 
+struct \hyperlink{structsanglier}{sanglier}
+\begin{DoxyCompactList}\small\item\em Structure de données d\textquotesingle{}un sanglier. \end{DoxyCompactList}\item 
+struct \hyperlink{structcarte}{carte}
+\begin{DoxyCompactList}\small\item\em Structure de données de la carte, contient un cueilleur, un compteur de nombre de tours, un tableau de champignons et un tableau de sangliers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcueilleur}{cueilleur} \hyperlink{projet__champignon_8h_aa26b126b4ee365d3f1823bf3c8e61ad1}{init\+\_\+cueilleur} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant d\textquotesingle{}initialiser un cueilleur (structure), la position initiale est définie aléatoirement. \end{DoxyCompactList}\item 
+struct \hyperlink{structchampignon}{champignon} \hyperlink{projet__champignon_8h_a0781997acf29b4bfe601b393bb6595f9}{init\+\_\+champignon} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant d\textquotesingle{}initialiser un champignon (structure), la position initiale est définie aléatoirement. \end{DoxyCompactList}\item 
+struct \hyperlink{structsanglier}{sanglier} \hyperlink{projet__champignon_8h_aa47435f963ba733a3f0723f46088f71c}{init\+\_\+sanglier} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de déplacement sont définies aléatoirement. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{projet__champignon_8h_af5ddc36a2eba20fbf0e056ec1e31a2c1}{aleatoire} (unsigned int limite)
+\begin{DoxyCompactList}\small\item\em La fonction aleatoire retourne un entier généré de manière pseudo-\/aléatoire compris entre 0 et la valeur de son paramètre. \end{DoxyCompactList}\item 
+void \hyperlink{projet__champignon_8h_aa27106b8602bc2deb96d6be27f15e450}{afficher\+Cueilleur} (struct \hyperlink{structcueilleur}{cueilleur} c)
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}ensemble des données du joueur. \end{DoxyCompactList}\item 
+void \hyperlink{projet__champignon_8h_afacad93084d4d8760ae89d2c82566685}{afficher\+Champignon} (struct \hyperlink{structchampignon}{champignon} c)
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}ensemble des données d\textquotesingle{}un champignon. \end{DoxyCompactList}\item 
+void \hyperlink{projet__champignon_8h_a2dbe7a256efef4aa6e9f63fb696abcf8}{afficher\+Sanglier} (struct \hyperlink{structsanglier}{sanglier} c)
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}ensemble des données d\textquotesingle{}un sanglier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Header du projet Champignon. 
+
+Le fichier contient les déclarations des structures, fonctions et procédures. 
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{projet__champignon_8h_afacad93084d4d8760ae89d2c82566685}\label{projet__champignon_8h_afacad93084d4d8760ae89d2c82566685}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!afficher\+Champignon@{afficher\+Champignon}}
+\index{afficher\+Champignon@{afficher\+Champignon}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Champignon()}{afficherChampignon()}}
+{\footnotesize\ttfamily void afficher\+Champignon (\begin{DoxyParamCaption}\item[{struct \hyperlink{structchampignon}{champignon}}]{c }\end{DoxyParamCaption})}
+
+
+
+Affiche l\textquotesingle{}ensemble des données d\textquotesingle{}un champignon. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & structure du champignon. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{projet__champignon_8h_aa27106b8602bc2deb96d6be27f15e450}\label{projet__champignon_8h_aa27106b8602bc2deb96d6be27f15e450}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!afficher\+Cueilleur@{afficher\+Cueilleur}}
+\index{afficher\+Cueilleur@{afficher\+Cueilleur}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Cueilleur()}{afficherCueilleur()}}
+{\footnotesize\ttfamily void afficher\+Cueilleur (\begin{DoxyParamCaption}\item[{struct \hyperlink{structcueilleur}{cueilleur}}]{c }\end{DoxyParamCaption})}
+
+
+
+Affiche l\textquotesingle{}ensemble des données du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & structure du joueur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{projet__champignon_8h_a2dbe7a256efef4aa6e9f63fb696abcf8}\label{projet__champignon_8h_a2dbe7a256efef4aa6e9f63fb696abcf8}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!afficher\+Sanglier@{afficher\+Sanglier}}
+\index{afficher\+Sanglier@{afficher\+Sanglier}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{afficher\+Sanglier()}{afficherSanglier()}}
+{\footnotesize\ttfamily void afficher\+Sanglier (\begin{DoxyParamCaption}\item[{struct \hyperlink{structsanglier}{sanglier}}]{c }\end{DoxyParamCaption})}
+
+
+
+Affiche l\textquotesingle{}ensemble des données d\textquotesingle{}un sanglier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & structure du sanglier. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{projet__champignon_8h_af5ddc36a2eba20fbf0e056ec1e31a2c1}\label{projet__champignon_8h_af5ddc36a2eba20fbf0e056ec1e31a2c1}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!aleatoire@{aleatoire}}
+\index{aleatoire@{aleatoire}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{aleatoire()}{aleatoire()}}
+{\footnotesize\ttfamily unsigned int aleatoire (\begin{DoxyParamCaption}\item[{unsigned int}]{limite }\end{DoxyParamCaption})}
+
+
+
+La fonction aleatoire retourne un entier généré de manière pseudo-\/aléatoire compris entre 0 et la valeur de son paramètre. 
+
+Pour initialiser le générateur pseudo-\/aléatoire, il faut ajouter l’instruction srand(time( N\+U\+LL)); au début de la fonction main et inclure les librairies time.\+h et stdlib.\+h. \mbox{\Hypertarget{projet__champignon_8h_a0781997acf29b4bfe601b393bb6595f9}\label{projet__champignon_8h_a0781997acf29b4bfe601b393bb6595f9}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!init\+\_\+champignon@{init\+\_\+champignon}}
+\index{init\+\_\+champignon@{init\+\_\+champignon}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+champignon()}{init\_champignon()}}
+{\footnotesize\ttfamily struct \hyperlink{structchampignon}{champignon} init\+\_\+champignon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant d\textquotesingle{}initialiser un champignon (structure), la position initiale est définie aléatoirement. 
+
+Le type du champignon est représenté par un caractère pouvant avoir la valeur \textquotesingle{}n\textquotesingle{} pour normal, \textquotesingle{}b\textquotesingle{} pour boost et \textquotesingle{}e\textquotesingle{} pour empoisonné. Exemple d\textquotesingle{}utilisation\+: struct champignon champ; champ=init\+\_\+champignons(char type); \mbox{\Hypertarget{projet__champignon_8h_aa26b126b4ee365d3f1823bf3c8e61ad1}\label{projet__champignon_8h_aa26b126b4ee365d3f1823bf3c8e61ad1}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!init\+\_\+cueilleur@{init\+\_\+cueilleur}}
+\index{init\+\_\+cueilleur@{init\+\_\+cueilleur}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+cueilleur()}{init\_cueilleur()}}
+{\footnotesize\ttfamily struct \hyperlink{structcueilleur}{cueilleur} init\+\_\+cueilleur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant d\textquotesingle{}initialiser un cueilleur (structure), la position initiale est définie aléatoirement. 
+
+Exemple d\textquotesingle{}utilisation\+: struct cueilleur c; c=\hyperlink{projet__champignon_8h_aa26b126b4ee365d3f1823bf3c8e61ad1}{init\+\_\+cueilleur()}; \mbox{\Hypertarget{projet__champignon_8h_aa47435f963ba733a3f0723f46088f71c}\label{projet__champignon_8h_aa47435f963ba733a3f0723f46088f71c}} 
+\index{projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}!init\+\_\+sanglier@{init\+\_\+sanglier}}
+\index{init\+\_\+sanglier@{init\+\_\+sanglier}!projet\+\_\+champignon.\+h@{projet\+\_\+champignon.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+sanglier()}{init\_sanglier()}}
+{\footnotesize\ttfamily struct \hyperlink{structsanglier}{sanglier} init\+\_\+sanglier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de déplacement sont définies aléatoirement. 
+
+Exemple d’utilisation\+: struct sangliers;c=\hyperlink{projet__champignon_8h_aa47435f963ba733a3f0723f46088f71c}{init\+\_\+sanglier()}; 
