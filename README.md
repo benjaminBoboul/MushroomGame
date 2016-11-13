@@ -2,6 +2,8 @@
 __IUT Réseau et Télécom__
 > projet par Benjamin et Maeg
 
+	Le fichier Make s'occupe de générer de la doc
+
 ## Partie 1
 > Conception du jeu
 

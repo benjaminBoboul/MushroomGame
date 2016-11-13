@@ -1,3 +1,9 @@
+/** @file projet_champignon.c
+ * @brief      fichier source du projet champignon.
+ * @author     benjamin Boboul
+ *
+ *             Le fichier contient du code, c'est déjà bien.
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
@@ -16,15 +22,15 @@ struct cueilleur init_cueilleur()
 	c.x = aleatoire(100);
 	c.y = aleatoire(100);
 	c.champignons = 0;
-	c.boost = 0;
-	c.dernierBoost = 0; // nombre de tour depuis le dernier boost.
+	c.effet = 0;
+	c.dernierEffet = 0; // nombre de tour depuis le dernier boost.
 	return c;
 };
 
-struct champignon init_champignon()
+struct champignon init_champignon(char type)
 {
 	struct champignon c;
-	c.type = 'n';
+	c.type = type;
 	c.x = aleatoire(100);
 	c.y = aleatoire(100);
 	c.ramasse = -1;
@@ -43,24 +49,31 @@ struct sanglier init_sanglier()
 /* procédures ============================================================== */
 void afficherCueilleur(struct cueilleur c)
 {
-	printf("\e[34mStatistiques du cueilleur :\e[0m\n");
-	printf("position x: %d ; position y: %d\n", c.x, c.y);
-	printf("nombre de champignons: %d\n", c.champignons);
-	printf("dernier boost: %c\n", c.boost);
-	printf("nombre de tour depuis le boost: %d\n", c.dernierBoost);
+	printf("\e[33mStatistiques du cueilleur :\e[0m\n");
+	printf("position x: \e[31m%d\e[0m ; position y: \e[31m%d\e[0m\n", c.x, c.y);
+	printf("nombre de champignons: \e[31m%d\e[0m\n", c.champignons);
+	if (c.effet == 0)
+	{
+		printf("dernier boost: \e[31mNA\e[0m\n");
+	}
+	else
+	{
+		printf("dernier boost: \e[31m%d\e[0m\n", c.effet);
+	}
+	printf("nombre de tour depuis le boost: \e[31m%d\e[0m\n", c.dernierEffet);
 }
 
 void afficherChampignon(struct champignon c)
 {
-	printf("\e[34mStatistiques du champignon :\e[0m\n");
-	printf("type de champignon: %c\n", c.type);
-	printf("position x: %d ; position y: %d\n", c.x, c.y);
-	printf("ramasse: %d\n", c.ramasse);
+	printf("\e[33mStatistiques du champignon :\e[0m\n");
+	printf("type de champignon: \e[31m%c\e[0m\n", c.type);
+	printf("position x: \e[31m%d\e[0m ; position y: \e[31m%d\e[0m\n", c.x, c.y);
+	printf("ramasse: \e[31m%d\e[0m\n", c.ramasse);
 }
 
 void afficherSanglier(struct sanglier c)
 {
-	printf("\e[34mStatistiques du sanglier :\e[0m\n");
-	printf("position x: %d ; position y: %d\n", c.x, c.y);
-	printf("vitesse de deplacement: %d\n", c.speed);
+	printf("\e[33mStatistiques du sanglier :\e[0m\n");
+	printf("position x: \e[31m%d\e[0m ; position y: \e[31m%d\e[0m\n", c.x, c.y);
+	printf("vitesse de deplacement: \e[31m%d\e[0m\n", c.speed);
 }

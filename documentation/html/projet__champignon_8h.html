@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Projet Champignon 2016: Référence du fichier projet_champignon.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -29,7 +29,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.13 -->
+<!-- Généré par Doxygen 1.8.12 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -74,7 +74,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcueilleur.html">cueilleur</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure de donnés du cueilleur, dispose d'une position x, y, un compteur à champignons ainsi que d'un état de boost.  <a href="structcueilleur.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure de donnés du cueilleur, dispose d'une position x, y, un compteur à champignons ainsi que d'un état d'effet.  <a href="structcueilleur.html#details">Plus de détails...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchampignon.html">champignon</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure de données d'un champignon, le champignon à une position x, y sur la carte et un compteur pour déterminer le tour auquel il as été ramassé.  <a href="structchampignon.html#details">Plus de détails...</a><br /></td></tr>
@@ -91,9 +91,9 @@ Fonctions</h2></td></tr>
 <tr class="memitem:aa26b126b4ee365d3f1823bf3c8e61ad1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcueilleur.html">cueilleur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8h.html#aa26b126b4ee365d3f1823bf3c8e61ad1">init_cueilleur</a> ()</td></tr>
 <tr class="memdesc:aa26b126b4ee365d3f1823bf3c8e61ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'initialiser un cueilleur (structure), la position initiale est définie aléatoirement.  <a href="#aa26b126b4ee365d3f1823bf3c8e61ad1">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aa26b126b4ee365d3f1823bf3c8e61ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0781997acf29b4bfe601b393bb6595f9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structchampignon.html">champignon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8h.html#a0781997acf29b4bfe601b393bb6595f9">init_champignon</a> ()</td></tr>
-<tr class="memdesc:a0781997acf29b4bfe601b393bb6595f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'initialiser un champignon (structure), la position initiale est définie aléatoirement.  <a href="#a0781997acf29b4bfe601b393bb6595f9">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a0781997acf29b4bfe601b393bb6595f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733fd364e156b37baa0e697b217b760d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structchampignon.html">champignon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8h.html#a733fd364e156b37baa0e697b217b760d">init_champignon</a> (char type)</td></tr>
+<tr class="memdesc:a733fd364e156b37baa0e697b217b760d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d’initialiser un champignon (structure), la position initiale est définie aléatoirement.  <a href="#a733fd364e156b37baa0e697b217b760d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a733fd364e156b37baa0e697b217b760d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47435f963ba733a3f0723f46088f71c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsanglier.html">sanglier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8h.html#aa47435f963ba733a3f0723f46088f71c">init_sanglier</a> ()</td></tr>
 <tr class="memdesc:aa47435f963ba733a3f0723f46088f71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de déplacement sont définies aléatoirement.  <a href="#aa47435f963ba733a3f0723f46088f71c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aa47435f963ba733a3f0723f46088f71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,7 +112,8 @@ Fonctions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Header du projet Champignon. </p>
-<p>Le fichier contient les déclarations des structures, fonctions et procédures. </p>
+<dl class="section author"><dt>Auteur</dt><dd>benjamin <pre class="fragment">        Le fichier contient les déclarations des structures, fonctions et
+        procédures.</pre></dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
 <a id="afacad93084d4d8760ae89d2c82566685"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afacad93084d4d8760ae89d2c82566685">&sect;&nbsp;</a></span>afficherChampignon()</h2>
@@ -133,7 +134,7 @@ Fonctions</h2></td></tr>
 <p>Affiche l'ensemble des données d'un champignon. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>structure du champignon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>struct champignon du champignon. </td></tr>
   </table>
   </dd>
 </dl>
@@ -159,7 +160,7 @@ Fonctions</h2></td></tr>
 <p>Affiche l'ensemble des données du joueur. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">joueur</td><td>structure du joueur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>struct cueilleur du joueur. </td></tr>
   </table>
   </dd>
 </dl>
@@ -185,7 +186,7 @@ Fonctions</h2></td></tr>
 <p>Affiche l'ensemble des données d'un sanglier. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>structure du sanglier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>struct sanglier du sanglier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -209,12 +210,19 @@ Fonctions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>La fonction aleatoire retourne un entier généré de manière pseudo-aléatoire compris entre 0 et la valeur de son paramètre. </p>
-<p>Pour initialiser le générateur pseudo-aléatoire, il faut ajouter l’instruction srand(time( NULL)); au début de la fonction main et inclure les librairies time.h et stdlib.h. </p>
+<p>Pour initialiser le générateur pseudo-aléatoire, il faut ajouter l’instruction srand(time( NULL)); au début de la fonction main et inclure les librairies time.h et stdlib.h.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">limite</td><td>Entier qui définis la limite a ne pas dépasser.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>entier non signé. </dd></dl>
 
 </div>
 </div>
-<a id="a0781997acf29b4bfe601b393bb6595f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0781997acf29b4bfe601b393bb6595f9">&sect;&nbsp;</a></span>init_champignon()</h2>
+<a id="a733fd364e156b37baa0e697b217b760d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733fd364e156b37baa0e697b217b760d">&sect;&nbsp;</a></span>init_champignon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,14 +230,17 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structchampignon.html">champignon</a> init_champignon </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fonction permettant d'initialiser un champignon (structure), la position initiale est définie aléatoirement. </p>
-<p>Le type du champignon est représenté par un caractère pouvant avoir la valeur 'n' pour normal, 'b' pour boost et 'e' pour empoisonné. Exemple d'utilisation: struct champignon champ; champ=init_champignons(char type); </p>
+<p>Fonction permettant d’initialiser un champignon (structure), la position initiale est définie aléatoirement. </p>
+<p>Le type du champignon est représenté par un caractère pouvant avoir la valeur ‘n’ pour normal, ‘b’ pour boost et ‘e’ pour empoisonné.</p>
+<p>Exemple d'utilisation : struct champignon champ; champ= <a class="el" href="projet__champignon_8h.html#a733fd364e156b37baa0e697b217b760d" title="Fonction permettant d’initialiser un champignon (structure), la position initiale est définie aléato...">init_champignon(char type)</a>;</p>
+<dl class="section return"><dt>Renvoie</dt><dd>struct champignon </dd></dl>
 
 </div>
 </div>
@@ -249,7 +260,8 @@ Fonctions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fonction permettant d'initialiser un cueilleur (structure), la position initiale est définie aléatoirement. </p>
-<p>Exemple d'utilisation: struct cueilleur c; c=<a class="el" href="projet__champignon_8h.html#aa26b126b4ee365d3f1823bf3c8e61ad1" title="Fonction permettant d&#39;initialiser un cueilleur (structure), la position initiale est définie aléatoir...">init_cueilleur()</a>; </p>
+<p>Exemple d'utilisation: struct cueilleur c; c=<a class="el" href="projet__champignon_8h.html#aa26b126b4ee365d3f1823bf3c8e61ad1" title="Fonction permettant d&#39;initialiser un cueilleur (structure), la position initiale est définie aléatoir...">init_cueilleur()</a>;</p>
+<dl class="section return"><dt>Renvoie</dt><dd>struct cueilleur </dd></dl>
 
 </div>
 </div>
@@ -269,7 +281,8 @@ Fonctions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de déplacement sont définies aléatoirement. </p>
-<p>Exemple d’utilisation: struct sangliers;c=<a class="el" href="projet__champignon_8h.html#aa47435f963ba733a3f0723f46088f71c" title="Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de dép...">init_sanglier()</a>; </p>
+<p>Exemple d’utilisation: struct sangliers;c=<a class="el" href="projet__champignon_8h.html#aa47435f963ba733a3f0723f46088f71c" title="Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de dép...">init_sanglier()</a>;</p>
+<dl class="section return"><dt>Renvoie</dt><dd>struct champignon </dd></dl>
 
 </div>
 </div>
@@ -278,7 +291,7 @@ Fonctions</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Généré par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
+</a> 1.8.12
 </small></address>
 </body>
 </html>
