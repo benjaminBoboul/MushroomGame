@@ -2,11 +2,16 @@
  * @brief      Header du projet Champignon.
  * @author     benjamin
  *
- *             Le fichier contient les déclarations des structures, fonctions et
- *             procédures.
+ *             Le fichier contient les déclarations des structures, fonctions
+ *             et procédures.
  */
 #ifndef __PROJET_CHAMPIGNON_H__
 #define __PROJET_CHAMPIGNON_H__
+
+// mettre en majuscule
+#define nbrChampi 15
+#define nbrSangli 7
+#define taillePlateau 100
 
 /* structures ============================================================== */
 /**
@@ -15,7 +20,7 @@
  */
 struct cueilleur 
 {
-	unsigned int x, y, champignons, dernierEffet;
+	unsigned short int x, y, champignons, dernierEffet;
 	unsigned char effet;
 };
 
@@ -27,8 +32,8 @@ struct cueilleur
 struct champignon
 {
 	char type;
-	unsigned int x, y;
-	int ramasse;
+	unsigned short int x, y;
+	short int ramasse;
 };
 
 /**
@@ -45,11 +50,12 @@ struct sanglier
  *             tableau de sangliers.
  */
 struct carte
-{
+{	
+	// char map[taillePlateau][taillePlateau];
 	struct cueilleur joueur;
-	int compteur;
-	int champignons[100][100];
-	int sangliers[100][100];
+	unsigned short int compteur;
+	struct champignon champignons[nbrChampi];
+	struct sanglier sangliers[nbrSangli];
 };
 
 /* structures fonctions ==================================================== */
@@ -90,10 +96,12 @@ struct champignon init_champignon(char type);
  */
 struct sanglier init_sanglier();
 
+struct carte init_carte();
+
 
 /* fonctions =============================================================== */
 /**
- * @brief      La fonction aleatoire retourne un entier généré de manière
+ * @brief      La fonction aléatoire retourne un entier généré de manière
  *             pseudo-aléatoire compris entre 0 et la valeur de son paramètre.
  *             Pour initialiser le générateur pseudo-aléatoire, il faut ajouter
  *             l’instruction srand(time( NULL)); au début de la fonction main et

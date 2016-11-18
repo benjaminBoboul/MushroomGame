@@ -16,6 +16,18 @@ struct \hyperlink{structsanglier}{sanglier}
 \begin{DoxyCompactList}\small\item\em Structure de données d\textquotesingle{}un sanglier. \end{DoxyCompactList}\item 
 struct \hyperlink{structcarte}{carte}
 \begin{DoxyCompactList}\small\item\em Structure de données de la carte, contient un cueilleur, un compteur de nombre de tours, un tableau de champignons et un tableau de sangliers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{projet__champignon_8h_a60efb0bcee53a1d449bdc66e18bdad2b}{}\label{projet__champignon_8h_a60efb0bcee53a1d449bdc66e18bdad2b} 
+\#define {\bfseries nbr\+Champi}~15
+\item 
+\hypertarget{projet__champignon_8h_ad75cc0047b185c3219f383bdd9016f40}{}\label{projet__champignon_8h_ad75cc0047b185c3219f383bdd9016f40} 
+\#define {\bfseries nbr\+Sangli}~7
+\item 
+\hypertarget{projet__champignon_8h_aec03bf2e5f87fe2fff401a14187b68d9}{}\label{projet__champignon_8h_aec03bf2e5f87fe2fff401a14187b68d9} 
+\#define {\bfseries taille\+Plateau}~100
+\end{DoxyCompactItemize}
 \subsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,8 +37,11 @@ struct \hyperlink{structchampignon}{champignon} \hyperlink{projet__champignon_8h
 \begin{DoxyCompactList}\small\item\em Fonction permettant d’initialiser un champignon (structure), la position initiale est définie aléatoirement. \end{DoxyCompactList}\item 
 struct \hyperlink{structsanglier}{sanglier} \hyperlink{projet__champignon_8h_aa47435f963ba733a3f0723f46088f71c}{init\+\_\+sanglier} ()
 \begin{DoxyCompactList}\small\item\em Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de déplacement sont définies aléatoirement. \end{DoxyCompactList}\item 
+\hypertarget{projet__champignon_8h_a67186b9ff6482bf7d1d1c0c0eb5733ad}{}\label{projet__champignon_8h_a67186b9ff6482bf7d1d1c0c0eb5733ad} 
+struct \hyperlink{structcarte}{carte} {\bfseries init\+\_\+carte} ()
+\item 
 unsigned int \hyperlink{projet__champignon_8h_af5ddc36a2eba20fbf0e056ec1e31a2c1}{aleatoire} (unsigned int limite)
-\begin{DoxyCompactList}\small\item\em La fonction aleatoire retourne un entier généré de manière pseudo-\/aléatoire compris entre 0 et la valeur de son paramètre. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em La fonction aléatoire retourne un entier généré de manière pseudo-\/aléatoire compris entre 0 et la valeur de son paramètre. \end{DoxyCompactList}\item 
 void \hyperlink{projet__champignon_8h_aa27106b8602bc2deb96d6be27f15e450}{afficher\+Cueilleur} (struct \hyperlink{structcueilleur}{cueilleur} c)
 \begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}ensemble des données du joueur. \end{DoxyCompactList}\item 
 void \hyperlink{projet__champignon_8h_afacad93084d4d8760ae89d2c82566685}{afficher\+Champignon} (struct \hyperlink{structchampignon}{champignon} c)
@@ -39,8 +54,8 @@ void \hyperlink{projet__champignon_8h_a2dbe7a256efef4aa6e9f63fb696abcf8}{affiche
 Header du projet Champignon. 
 
 \begin{DoxyAuthor}{Auteur}
-benjamin \begin{DoxyVerb}        Le fichier contient les déclarations des structures, fonctions et
-        procédures.\end{DoxyVerb}
+benjamin \begin{DoxyVerb}        Le fichier contient les déclarations des structures, fonctions
+        et procédures.\end{DoxyVerb}
 
 \end{DoxyAuthor}
 
@@ -99,7 +114,7 @@ Affiche l\textquotesingle{}ensemble des données d\textquotesingle{}un sanglier.
 
 
 
-La fonction aleatoire retourne un entier généré de manière pseudo-\/aléatoire compris entre 0 et la valeur de son paramètre. 
+La fonction aléatoire retourne un entier généré de manière pseudo-\/aléatoire compris entre 0 et la valeur de son paramètre. 
 
 Pour initialiser le générateur pseudo-\/aléatoire, il faut ajouter l’instruction srand(time( N\+U\+L\+L)); au début de la fonction main et inclure les librairies time.\+h et stdlib.\+h.
 

@@ -1,11 +1,14 @@
 # Projet Champignon - 2016
 __IUT Réseau et Télécom__
-> projet par Benjamin et Maeg
 
-	Le fichier Make s'occupe de générer de la doc
+_projet par Benjamin et Maeg_
+
+---
+
+**Le fichier Make s'occupe de générer de la documentation via doxygen**
 
 ## Partie 1
-> Conception du jeu
+### Conception du jeu
 
 Le jeu à pour objectif la cueillette de champignon:  
 Le joueur est un cueilleur qui se déplace sur un plateau afin de récolter des champignons tout en évitant les dangers.

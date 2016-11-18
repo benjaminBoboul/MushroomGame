@@ -75,7 +75,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:af5ddc36a2eba20fbf0e056ec1e31a2c1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8c.html#af5ddc36a2eba20fbf0e056ec1e31a2c1">aleatoire</a> (unsigned int limite)</td></tr>
-<tr class="memdesc:af5ddc36a2eba20fbf0e056ec1e31a2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction aleatoire retourne un entier généré de manière pseudo-aléatoire compris entre 0 et la valeur de son paramètre.  <a href="#af5ddc36a2eba20fbf0e056ec1e31a2c1">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:af5ddc36a2eba20fbf0e056ec1e31a2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction aléatoire retourne un entier généré de manière pseudo-aléatoire compris entre 0 et la valeur de son paramètre.  <a href="#af5ddc36a2eba20fbf0e056ec1e31a2c1">Plus de détails...</a><br /></td></tr>
 <tr class="separator:af5ddc36a2eba20fbf0e056ec1e31a2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26b126b4ee365d3f1823bf3c8e61ad1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcueilleur.html">cueilleur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8c.html#aa26b126b4ee365d3f1823bf3c8e61ad1">init_cueilleur</a> ()</td></tr>
 <tr class="memdesc:aa26b126b4ee365d3f1823bf3c8e61ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d'initialiser un cueilleur (structure), la position initiale est définie aléatoirement.  <a href="#aa26b126b4ee365d3f1823bf3c8e61ad1">Plus de détails...</a><br /></td></tr>
@@ -86,6 +86,9 @@ Fonctions</h2></td></tr>
 <tr class="memitem:aa47435f963ba733a3f0723f46088f71c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsanglier.html">sanglier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8c.html#aa47435f963ba733a3f0723f46088f71c">init_sanglier</a> ()</td></tr>
 <tr class="memdesc:aa47435f963ba733a3f0723f46088f71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant d’initialiser un sanglier (structure), la position initiale et la vitesse de déplacement sont définies aléatoirement.  <a href="#aa47435f963ba733a3f0723f46088f71c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aa47435f963ba733a3f0723f46088f71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67186b9ff6482bf7d1d1c0c0eb5733ad"><td class="memItemLeft" align="right" valign="top"><a id="a67186b9ff6482bf7d1d1c0c0eb5733ad"></a>
+struct <a class="el" href="structcarte.html">carte</a>&#160;</td><td class="memItemRight" valign="bottom"><b>init_carte</b> ()</td></tr>
+<tr class="separator:a67186b9ff6482bf7d1d1c0c0eb5733ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa27106b8602bc2deb96d6be27f15e450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="projet__champignon_8c.html#aa27106b8602bc2deb96d6be27f15e450">afficherCueilleur</a> (struct <a class="el" href="structcueilleur.html">cueilleur</a> c)</td></tr>
 <tr class="memdesc:aa27106b8602bc2deb96d6be27f15e450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'ensemble des données du joueur.  <a href="#aa27106b8602bc2deb96d6be27f15e450">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aa27106b8602bc2deb96d6be27f15e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,7 +101,7 @@ Fonctions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>fichier source du projet champignon. </p>
-<dl class="section author"><dt>Auteur</dt><dd>benjamin Boboul <pre class="fragment">        Le fichier contient du code, c'est déjà bien.</pre></dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>benjamin Boboul <pre class="fragment">        Le fichier contient les fonctions du programme.</pre></dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
 <a id="afacad93084d4d8760ae89d2c82566685"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afacad93084d4d8760ae89d2c82566685">&sect;&nbsp;</a></span>afficherChampignon()</h2>
@@ -194,7 +197,7 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>La fonction aleatoire retourne un entier généré de manière pseudo-aléatoire compris entre 0 et la valeur de son paramètre. </p>
+<p>La fonction aléatoire retourne un entier généré de manière pseudo-aléatoire compris entre 0 et la valeur de son paramètre. </p>
 <p>Pour initialiser le générateur pseudo-aléatoire, il faut ajouter l’instruction srand(time( NULL)); au début de la fonction main et inclure les librairies time.h et stdlib.h.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">

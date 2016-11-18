@@ -1,0 +1,20 @@
+{\bfseries I\+UT Réseau et Télécom}
+
+{\itshape projet par Benjamin et Maeg} 
+
+
+
+{\bfseries Le fichier Make s\textquotesingle{}occupe de générer de la documentation via doxygen}
+
+\subsection*{Partie 1}
+
+\subsubsection*{Conception du jeu}
+
+Le jeu à pour objectif la cueillette de champignon\+: Le joueur est un cueilleur qui se déplace sur un plateau afin de récolter des champignons tout en évitant les dangers.
+
+Les différentes entités sur le plateau de jeu sont\+:
+\begin{DoxyItemize}
+\item Le cueilleur Personnage que l\textquotesingle{}on déplace sur des axes x et y dans un tableau pouvant bénéficier d\textquotesingle{}effets de la part des champignons qu\textquotesingle{}il ramasse.
+\item Le champignon Entité que le cueilleur ramasse ou que les sangliers piétinent, il reste fixe. Peut affecter différents effets au cueilleur.
+\item Le sanglier Sa vitesse peut varier de 1 à 2 cases par tour. Lorsqu\textquotesingle{}il passe sur un champignon ce dernier est alors piétiné. 
+\end{DoxyItemize}
